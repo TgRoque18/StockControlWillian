@@ -8,5 +8,9 @@ namespace StockControlWillian.Helpers
 {
     public class EmailHelper
     {
+        public EmailHelper()
+        {
+
+        }
     }
 }
