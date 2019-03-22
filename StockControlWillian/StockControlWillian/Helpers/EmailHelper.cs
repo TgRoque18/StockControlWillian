@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockControlWillian.Helpers
 {
-    class EmailHelper
+    public class EmailHelper
     {
     }
 }
