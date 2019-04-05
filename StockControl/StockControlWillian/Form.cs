@@ -16,5 +16,12 @@ namespace StockControlWillian
         {
             InitializeComponent();
         }
+
+        private void btnCriarConta_Click(object sender, EventArgs e)
+        {
+            Login L = new Login();
+            L.Show();
+            this.Hide();
+        }
     }
 }
