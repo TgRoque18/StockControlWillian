@@ -48,13 +48,15 @@
             this.txtCPF = new System.Windows.Forms.TextBox();
             this.txtRG = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.label2.Location = new System.Drawing.Point(368, 73);
+            this.label2.Location = new System.Drawing.Point(368, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 26);
             this.label2.TabIndex = 71;
@@ -63,7 +65,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.textBox1.Location = new System.Drawing.Point(490, 71);
+            this.textBox1.Location = new System.Drawing.Point(490, 70);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(176, 31);
             this.textBox1.TabIndex = 70;
@@ -71,7 +73,7 @@
             // btnOk
             // 
             this.btnOk.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOk.Location = new System.Drawing.Point(568, 213);
+            this.btnOk.Location = new System.Drawing.Point(490, 268);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(98, 38);
             this.btnOk.TabIndex = 69;
@@ -82,7 +84,7 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(373, 213);
+            this.btnCancel.Location = new System.Drawing.Point(153, 268);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(98, 38);
             this.btnCancel.TabIndex = 68;
@@ -94,7 +96,7 @@
             // 
             this.lblUser.AutoSize = true;
             this.lblUser.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.Location = new System.Drawing.Point(28, 24);
+            this.lblUser.Location = new System.Drawing.Point(20, 24);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(78, 26);
             this.lblUser.TabIndex = 67;
@@ -112,7 +114,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.label1.Location = new System.Drawing.Point(27, 168);
+            this.label1.Location = new System.Drawing.Point(20, 168);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 26);
             this.label1.TabIndex = 66;
@@ -131,7 +133,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.label6.Location = new System.Drawing.Point(28, 120);
+            this.label6.Location = new System.Drawing.Point(20, 120);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(65, 26);
             this.label6.TabIndex = 65;
@@ -141,7 +143,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 73);
+            this.label5.Location = new System.Drawing.Point(20, 72);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 26);
             this.label5.TabIndex = 64;
@@ -151,7 +153,7 @@
             // 
             this.lblEndereco.AutoSize = true;
             this.lblEndereco.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.lblEndereco.Location = new System.Drawing.Point(27, 219);
+            this.lblEndereco.Location = new System.Drawing.Point(368, 216);
             this.lblEndereco.Name = "lblEndereco";
             this.lblEndereco.Size = new System.Drawing.Size(94, 26);
             this.lblEndereco.TabIndex = 63;
@@ -199,7 +201,7 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.txtEmail.Location = new System.Drawing.Point(153, 71);
+            this.txtEmail.Location = new System.Drawing.Point(153, 70);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(176, 31);
             this.txtEmail.TabIndex = 57;
@@ -207,7 +209,7 @@
             // txtEndereco
             // 
             this.txtEndereco.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.txtEndereco.Location = new System.Drawing.Point(153, 217);
+            this.txtEndereco.Location = new System.Drawing.Point(490, 214);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(176, 31);
             this.txtEndereco.TabIndex = 56;
@@ -236,12 +238,36 @@
             this.txtNome.Size = new System.Drawing.Size(176, 31);
             this.txtNome.TabIndex = 53;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
+            this.label3.Location = new System.Drawing.Point(20, 216);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(124, 26);
+            this.label3.TabIndex = 72;
+            this.label3.Text = "Tipo de User";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Usuario",
+            "Administrador"});
+            this.comboBox1.Location = new System.Drawing.Point(153, 213);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(176, 32);
+            this.comboBox1.TabIndex = 73;
+            // 
             // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
-            this.ClientSize = new System.Drawing.Size(693, 272);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ClientSize = new System.Drawing.Size(693, 313);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnOk);
@@ -291,5 +317,7 @@
         private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.TextBox txtRG;
         private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
