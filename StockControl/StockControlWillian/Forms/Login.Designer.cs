@@ -94,7 +94,7 @@
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.BackColor = System.Drawing.SystemColors.Highlight;
+            this.lblUser.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.lblUser.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblUser.Location = new System.Drawing.Point(28, 203);
@@ -128,7 +128,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(352, 392);
             this.Controls.Add(this.btnRPassword);
             this.Controls.Add(this.pictureBox1);
