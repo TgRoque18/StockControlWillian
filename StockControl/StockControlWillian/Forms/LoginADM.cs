@@ -2,9 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -15,6 +17,15 @@ namespace StockControlWillian
     {
         public string user;
         public string password;
+
+        private string To;
+        private string SMTP = ConfigurationManager.AppSettings["SMTP"];
+        private string PORT = ConfigurationManager.AppSettings["PORT"];
+        private string EMAIL = ConfigurationManager.AppSettings["EMAIL"];
+        private string PASS = ConfigurationManager.AppSettings["PASS"];
+
+        private MailMessage mail;
+
         public LoginADM()
         {
             InitializeComponent();
@@ -67,13 +78,35 @@ namespace StockControlWillian
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Home H = new Home();
+            H.Show();
+            this.Show();
         }
 
         private void btnRPassword_Click(object sender, EventArgs e)
         {
             string newPass = "testes@123";
             string newPassHash = UserHelper.GeneratePassword(newPass);
+
+            To = "william.blacutt@gmail.com";
+            //Subject = txtSubject.Text;
+            //Body = txtMessage.Text;
+
+            mail = new MailMessage();
+            mail.To.Add(new MailAddress(this.To));
+            mail.From = new MailAddress(EMAIL);
+            mail.Subject = "Nova senha";
+            mail.Body = "Sua nova senha é " + newPass + ", por favor trocar a senha!";
+            mail.IsBodyHtml = true;
+
+            SmtpClient client = new SmtpClient(SMTP, int.Parse(PORT));
+            using (client)
+            {
+                client.Credentials = new System.Net.NetworkCredential(EMAIL, PASS);
+                client.EnableSsl = true;
+                client.Send(mail);
+            }
+            MessageBox.Show("Mensaje enviado Exitosamente");
         }
     }
 }

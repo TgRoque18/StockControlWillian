@@ -106,13 +106,14 @@
             // btnRPassword
             // 
             this.btnRPassword.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRPassword.Location = new System.Drawing.Point(97, 343);
+            this.btnRPassword.Location = new System.Drawing.Point(97, 347);
             this.btnRPassword.Name = "btnRPassword";
             this.btnRPassword.Size = new System.Drawing.Size(161, 26);
             this.btnRPassword.TabIndex = 41;
             this.btnRPassword.Text = "Recuperação de Senha";
             this.btnRPassword.UseVisualStyleBackColor = true;
             this.btnRPassword.Visible = false;
+            this.btnRPassword.Click += new System.EventHandler(this.btnRPassword_Click);
             // 
             // pictureBox1
             // 
