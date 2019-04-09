@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockControlWillian.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,7 @@ namespace StockControlWillian
             Home H = new Home();
             H.Show();
             this.Show();
+            this.Close();
         }
 
         private void sentEmailToolStripMenuItem_Click(object sender, EventArgs e)
@@ -34,6 +36,14 @@ namespace StockControlWillian
             SentEmail SE = new SentEmail();
             SE.Show();
             this.Show();
+        }
+
+        private void categoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomeCategory HC = new HomeCategory();
+            HC.Show();
+            this.Show();
+            this.Close();
         }
     }
 }

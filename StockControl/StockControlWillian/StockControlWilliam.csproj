@@ -61,6 +61,12 @@
     <Compile Include="Classe\Stock.cs" />
     <Compile Include="Classe\User.cs" />
     <Compile Include="Classe\UserType.cs" />
+    <Compile Include="Forms\HomeCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeCategory.Designer.cs">
+      <DependentUpon>HomeCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\Helper.cs" />
     <Compile Include="Helpers\UserHelper.cs" />
     <Compile Include="Forms\Home.cs">
@@ -69,11 +75,11 @@
     <Compile Include="Forms\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\HomeADM.cs">
+    <Compile Include="Forms\HomeUserADM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\HomeADM.Designer.cs">
-      <DependentUpon>HomeADM.cs</DependentUpon>
+    <Compile Include="Forms\HomeUserADM.Designer.cs">
+      <DependentUpon>HomeUserADM.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\HomeUser.cs">
       <SubType>Form</SubType>
@@ -117,8 +123,11 @@
     <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\HomeADM.resx">
-      <DependentUpon>HomeADM.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\HomeUserADM.resx">
+      <DependentUpon>HomeUserADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeCategory.resx">
+      <DependentUpon>HomeCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\HomeUser.resx">
       <DependentUpon>HomeUser.cs</DependentUpon>
