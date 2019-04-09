@@ -96,15 +96,16 @@
             // 
             this.printToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources.print_printer_2;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.printToolStripMenuItem.Text = "Print";
             // 
             // logOffToolStripMenuItem
             // 
             this.logOffToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources.exit_512;
             this.logOffToolStripMenuItem.Name = "logOffToolStripMenuItem";
-            this.logOffToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.logOffToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logOffToolStripMenuItem.Text = "LogOff";
+            this.logOffToolStripMenuItem.Click += new System.EventHandler(this.logOffToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
@@ -119,8 +120,9 @@
             // categoryToolStripMenuItem
             // 
             this.categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
-            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.categoryToolStripMenuItem.Text = "Category";
+            this.categoryToolStripMenuItem.Click += new System.EventHandler(this.categoryToolStripMenuItem_Click);
             // 
             // productToolStripMenuItem
             // 
@@ -148,15 +150,17 @@
             // 
             this.contactToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources._18392;
             this.contactToolStripMenuItem.Name = "contactToolStripMenuItem";
-            this.contactToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.contactToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.contactToolStripMenuItem.Text = "Contact";
+            this.contactToolStripMenuItem.Click += new System.EventHandler(this.contactToolStripMenuItem_Click);
             // 
             // sentEmailToolStripMenuItem
             // 
             this.sentEmailToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources.kisspng_ipma_email_telephone_message_email_icon_5acf36453ee1e1_3103384815235292852576;
             this.sentEmailToolStripMenuItem.Name = "sentEmailToolStripMenuItem";
-            this.sentEmailToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.sentEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.sentEmailToolStripMenuItem.Text = "Sent E-mail";
+            this.sentEmailToolStripMenuItem.Click += new System.EventHandler(this.sentEmailToolStripMenuItem_Click);
             // 
             // changePasswordToolStripMenuItem
             // 

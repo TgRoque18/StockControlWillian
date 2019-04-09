@@ -58,6 +58,7 @@ namespace StockControlWillian
                 else
                 {
                     MessageBox.Show("Dados obrigatorios nao preenchidos!");
+                    this.Close();
                 }
             }
             catch (Exception ex)

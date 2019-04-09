@@ -58,6 +58,7 @@ namespace StockControlWillian
                 HomeADM HA = new HomeADM();
                 HA.Show();
                 this.Hide();
+
             }
             else
             {
@@ -80,8 +81,8 @@ namespace StockControlWillian
         {
             Home H = new Home();
             H.Show();
-            this.Show();
-        }
+            this.Hide();
+         }
 
         private void btnRPassword_Click(object sender, EventArgs e)
         {

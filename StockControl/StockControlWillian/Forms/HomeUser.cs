@@ -27,8 +27,7 @@ namespace StockControlWillian
         {
             Home H = new Home();
             H.Show();
-            this.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void sentEmailToolStripMenuItem_Click(object sender, EventArgs e)
@@ -42,8 +41,7 @@ namespace StockControlWillian
         {
             HomeCategory HC = new HomeCategory();
             HC.Show();
-            this.Show();
-            this.Close();
+            this.Hide();
         }
     }
 }

@@ -40,7 +40,7 @@ namespace StockControlWillian
                 MessageBox.Show(Helpers.Helper.SBanco());
                 HomeUser HU = new HomeUser();
                 HU.Show();
-                this.Show();
+                this.Hide();
             }
             else
             {
@@ -54,7 +54,7 @@ namespace StockControlWillian
         {
             Home H = new Home();
             H.Show();
-            this.Show();
+            this.Hide();
         }
 
         private void txtPassword_TextChanged(object sender, EventArgs e)
