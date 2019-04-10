@@ -30,19 +30,20 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.categoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sentEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sentEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -68,24 +69,10 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
             this.toolStripMenuItem1.Text = "File";
             // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources.print_printer_2;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.printToolStripMenuItem.Text = "Print";
-            // 
-            // logOffToolStripMenuItem
-            // 
-            this.logOffToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources.exit_512;
-            this.logOffToolStripMenuItem.Name = "logOffToolStripMenuItem";
-            this.logOffToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.logOffToolStripMenuItem.Text = "LogOff";
-            this.logOffToolStripMenuItem.Click += new System.EventHandler(this.logOffToolStripMenuItem_Click);
-            // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.homeToolStripMenuItem,
             this.categoryToolStripMenuItem,
             this.productToolStripMenuItem,
             this.stockToolStripMenuItem});
@@ -93,24 +80,33 @@
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.viewToolStripMenuItem.Text = "View";
             // 
+            // homeToolStripMenuItem
+            // 
+            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.homeToolStripMenuItem.Text = "Home";
+            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
+            // 
             // categoryToolStripMenuItem
             // 
             this.categoryToolStripMenuItem.Name = "categoryToolStripMenuItem";
-            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.categoryToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.categoryToolStripMenuItem.Text = "Category";
             this.categoryToolStripMenuItem.Click += new System.EventHandler(this.categoryToolStripMenuItem_Click);
             // 
             // productToolStripMenuItem
             // 
             this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.productToolStripMenuItem.Text = "Product";
+            this.productToolStripMenuItem.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // stockToolStripMenuItem
             // 
             this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
-            this.stockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stockToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.stockToolStripMenuItem.Text = "Stock";
+            this.stockToolStripMenuItem.Click += new System.EventHandler(this.stockToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -121,28 +117,6 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // contactToolStripMenuItem
-            // 
-            this.contactToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources._18392;
-            this.contactToolStripMenuItem.Name = "contactToolStripMenuItem";
-            this.contactToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.contactToolStripMenuItem.Text = "Contact";
-            this.contactToolStripMenuItem.Click += new System.EventHandler(this.contactToolStripMenuItem_Click);
-            // 
-            // sentEmailToolStripMenuItem
-            // 
-            this.sentEmailToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources.kisspng_ipma_email_telephone_message_email_icon_5acf36453ee1e1_3103384815235292852576;
-            this.sentEmailToolStripMenuItem.Name = "sentEmailToolStripMenuItem";
-            this.sentEmailToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.sentEmailToolStripMenuItem.Text = "Sent E-mail";
-            this.sentEmailToolStripMenuItem.Click += new System.EventHandler(this.sentEmailToolStripMenuItem_Click);
-            // 
-            // changePasswordToolStripMenuItem
-            // 
-            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
-            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
-            this.changePasswordToolStripMenuItem.Text = "Change Password";
             // 
             // textBox1
             // 
@@ -168,18 +142,56 @@
             this.dataGridView1.Size = new System.Drawing.Size(737, 299);
             this.dataGridView1.TabIndex = 4;
             // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources.print_printer_2;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.printToolStripMenuItem.Text = "Print";
+            // 
+            // logOffToolStripMenuItem
+            // 
+            this.logOffToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources.exit_512;
+            this.logOffToolStripMenuItem.Name = "logOffToolStripMenuItem";
+            this.logOffToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+            this.logOffToolStripMenuItem.Text = "LogOff";
+            this.logOffToolStripMenuItem.Click += new System.EventHandler(this.logOffToolStripMenuItem_Click);
+            // 
+            // contactToolStripMenuItem
+            // 
+            this.contactToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources._18392;
+            this.contactToolStripMenuItem.Name = "contactToolStripMenuItem";
+            this.contactToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.contactToolStripMenuItem.Text = "Contact";
+            this.contactToolStripMenuItem.Click += new System.EventHandler(this.contactToolStripMenuItem_Click);
+            // 
+            // sentEmailToolStripMenuItem
+            // 
+            this.sentEmailToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources.kisspng_ipma_email_telephone_message_email_icon_5acf36453ee1e1_3103384815235292852576;
+            this.sentEmailToolStripMenuItem.Name = "sentEmailToolStripMenuItem";
+            this.sentEmailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sentEmailToolStripMenuItem.Text = "Sent E-mail";
+            this.sentEmailToolStripMenuItem.Click += new System.EventHandler(this.sentEmailToolStripMenuItem_Click);
+            // 
+            // changePasswordToolStripMenuItem
+            // 
+            this.changePasswordToolStripMenuItem.Image = global::StockControlWillian.Properties.Resources._63440;
+            this.changePasswordToolStripMenuItem.Name = "changePasswordToolStripMenuItem";
+            this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.changePasswordToolStripMenuItem.Text = "Change Password";
+            // 
             // HomeUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(762, 395);
+            this.ClientSize = new System.Drawing.Size(762, 397);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "HomeUser";
-            this.Text = "HomeUser";
+            this.Text = "Home";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -205,5 +217,6 @@
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
     }
 }

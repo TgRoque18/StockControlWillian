@@ -43,5 +43,26 @@ namespace StockControlWillian
             HC.Show();
             this.Hide();
         }
+
+        private void productToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomeProduct HP = new HomeProduct();
+            HP.Show();
+            this.Hide();
+        }
+
+        private void stockToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomeStock HS = new HomeStock();
+            HS.Show();
+            this.Hide();
+        }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomeUser HU = new HomeUser();
+            HU.Show();
+            this.Hide();
+        }
     }
 }

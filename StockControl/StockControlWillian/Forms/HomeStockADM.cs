@@ -1,5 +1,4 @@
-﻿using StockControlWillian.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StockControlWillian
+namespace StockControlWillian.Forms
 {
-    public partial class HomeUserADM : Form
+    public partial class HomeStockADM : Form
     {
-        public HomeUserADM()
+        public HomeStockADM()
         {
             InitializeComponent();
         }
@@ -63,6 +62,20 @@ namespace StockControlWillian
             HomeUserADM HU = new HomeUserADM();
             HU.Show();
             this.Hide();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            HomeUserADM HU = new HomeUserADM();
+            HU.Show();
+            this.Hide();
+        }
+
+        private void btnStock_Click(object sender, EventArgs e)
+        {
+            NewStock NS = new NewStock();
+            NS.Show();
+            this.Show();
         }
     }
 }

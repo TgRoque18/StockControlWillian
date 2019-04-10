@@ -1,5 +1,4 @@
-﻿using StockControlWillian.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StockControlWillian
+namespace StockControlWillian.Forms
 {
-    public partial class HomeUserADM : Form
+    public partial class HomeLogErro : Form
     {
-        public HomeUserADM()
+        public HomeLogErro()
         {
             InitializeComponent();
         }
@@ -59,6 +58,13 @@ namespace StockControlWillian
         }
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomeUserADM HU = new HomeUserADM();
+            HU.Show();
+            this.Hide();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
         {
             HomeUserADM HU = new HomeUserADM();
             HU.Show();

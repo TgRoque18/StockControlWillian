@@ -1,6 +1,6 @@
 ﻿namespace StockControlWillian.Forms
 {
-    partial class HomeCategory
+    partial class HomeStock
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,35 +41,14 @@
             this.contactToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sentEmailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnNewCategory = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnStock = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 81);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(737, 299);
-            this.dataGridView1.TabIndex = 8;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Location = new System.Drawing.Point(425, 36);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(75, 23);
-            this.btnSearch.TabIndex = 7;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(12, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(396, 20);
-            this.textBox1.TabIndex = 6;
             // 
             // menuStrip1
             // 
@@ -82,8 +58,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(767, 24);
-            this.menuStrip1.TabIndex = 9;
+            this.menuStrip1.Size = new System.Drawing.Size(762, 24);
+            this.menuStrip1.TabIndex = 13;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // toolStripMenuItem1
@@ -182,21 +158,45 @@
             this.changePasswordToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.changePasswordToolStripMenuItem.Text = "Change Password";
             // 
-            // btnNewCategory
+            // dataGridView1
             // 
-            this.btnNewCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewCategory.Location = new System.Drawing.Point(648, 386);
-            this.btnNewCategory.Name = "btnNewCategory";
-            this.btnNewCategory.Size = new System.Drawing.Size(101, 36);
-            this.btnNewCategory.TabIndex = 17;
-            this.btnNewCategory.Text = "Add New Category";
-            this.btnNewCategory.UseVisualStyleBackColor = true;
-            this.btnNewCategory.Click += new System.EventHandler(this.btnNewCategory_Click);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 82);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(737, 299);
+            this.dataGridView1.TabIndex = 12;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Location = new System.Drawing.Point(425, 37);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(75, 23);
+            this.btnSearch.TabIndex = 11;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(12, 39);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(396, 20);
+            this.textBox1.TabIndex = 10;
+            // 
+            // btnStock
+            // 
+            this.btnStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStock.Location = new System.Drawing.Point(648, 387);
+            this.btnStock.Name = "btnStock";
+            this.btnStock.Size = new System.Drawing.Size(101, 36);
+            this.btnStock.TabIndex = 17;
+            this.btnStock.Text = "Add More Stock";
+            this.btnStock.UseVisualStyleBackColor = true;
+            this.btnStock.Click += new System.EventHandler(this.btnStock_Click);
             // 
             // btnHome
             // 
             this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.Location = new System.Drawing.Point(12, 386);
+            this.btnHome.Location = new System.Drawing.Point(12, 387);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(101, 36);
             this.btnHome.TabIndex = 16;
@@ -204,23 +204,23 @@
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // HomeCategory
+            // HomeStock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(767, 431);
-            this.Controls.Add(this.btnNewCategory);
+            this.ClientSize = new System.Drawing.Size(762, 434);
+            this.Controls.Add(this.btnStock);
             this.Controls.Add(this.btnHome);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.textBox1);
-            this.Name = "HomeCategory";
-            this.Text = "Stock Control - Category";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Name = "HomeStock";
+            this.Text = "Stock Control - Stock";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,9 +228,6 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
@@ -243,8 +240,11 @@
         private System.Windows.Forms.ToolStripMenuItem contactToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sentEmailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
-        private System.Windows.Forms.Button btnNewCategory;
+        private System.Windows.Forms.Button btnStock;
         private System.Windows.Forms.Button btnHome;
     }
 }

@@ -1,5 +1,4 @@
-﻿using StockControlWillian.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StockControlWillian
+namespace StockControlWillian.Forms
 {
-    public partial class HomeUserADM : Form
+    public partial class HomeProduct : Form
     {
-        public HomeUserADM()
+        public HomeProduct()
         {
             InitializeComponent();
         }
@@ -39,28 +38,42 @@ namespace StockControlWillian
 
         private void categoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HomeCategoryADM HC = new HomeCategoryADM();
+            HomeCategory HC = new HomeCategory();
             HC.Show();
             this.Hide();
         }
 
         private void productToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HomeProductADM HP = new HomeProductADM();
+            HomeProduct HP = new HomeProduct();
             HP.Show();
             this.Hide();
         }
 
         private void stockToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HomeStockADM HS = new HomeStockADM();
+            HomeStock HS = new HomeStock();
             HS.Show();
             this.Hide();
         }
 
         private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            HomeUserADM HU = new HomeUserADM();
+            HomeUser HU = new HomeUser();
+            HU.Show();
+            this.Hide();
+        }
+
+        private void btnNewProduct_Click(object sender, EventArgs e)
+        {
+            NewProductADM NP = new NewProductADM();
+            NP.Show();
+            this.Show();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            HomeUser HU = new HomeUser();
             HU.Show();
             this.Hide();
         }

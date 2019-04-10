@@ -61,11 +61,71 @@
     <Compile Include="Classe\Stock.cs" />
     <Compile Include="Classe\User.cs" />
     <Compile Include="Classe\UserType.cs" />
+    <Compile Include="Forms\HomeCategoryADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeCategoryADM.Designer.cs">
+      <DependentUpon>HomeCategoryADM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\HomeCategory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\HomeCategory.Designer.cs">
       <DependentUpon>HomeCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeLog.Designer.cs">
+      <DependentUpon>HomeLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeLogErro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeLogErro.Designer.cs">
+      <DependentUpon>HomeLogErro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeProductADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeProductADM.Designer.cs">
+      <DependentUpon>HomeProductADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeProduct.Designer.cs">
+      <DependentUpon>HomeProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeStockADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeStockADM.Designer.cs">
+      <DependentUpon>HomeStockADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeStock.Designer.cs">
+      <DependentUpon>HomeStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewCategory.Designer.cs">
+      <DependentUpon>NewCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewProduct.Designer.cs">
+      <DependentUpon>NewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NewStock.Designer.cs">
+      <DependentUpon>NewStock.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Helper.cs" />
     <Compile Include="Helpers\UserHelper.cs" />
@@ -123,6 +183,27 @@
     <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeCategoryADM.resx">
+      <DependentUpon>HomeCategoryADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeLog.resx">
+      <DependentUpon>HomeLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeLogErro.resx">
+      <DependentUpon>HomeLogErro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeProductADM.resx">
+      <DependentUpon>HomeProductADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeProduct.resx">
+      <DependentUpon>HomeProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeStockADM.resx">
+      <DependentUpon>HomeStockADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeStock.resx">
+      <DependentUpon>HomeStock.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\HomeUserADM.resx">
       <DependentUpon>HomeUserADM.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +218,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewCategory.resx">
+      <DependentUpon>NewCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewProduct.resx">
+      <DependentUpon>NewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NewStock.resx">
+      <DependentUpon>NewStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -187,6 +277,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\kisspng-ipma-email-telephone-message-email-icon-5acf36453ee1e1.3103384815235292852576.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a406a03312656001cdb71febc38f6d82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26062.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\63440.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
