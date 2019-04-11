@@ -64,5 +64,19 @@ namespace StockControlWillian
             HU.Show();
             this.Hide();
         }
+
+        private void logToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomeLog HL = new HomeLog();
+            HL.Show();
+            this.Hide();
+        }
+
+        private void logErroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomeLogErro HLE = new HomeLogErro();
+            HLE.Show();
+            this.Hide();
+        }
     }
 }

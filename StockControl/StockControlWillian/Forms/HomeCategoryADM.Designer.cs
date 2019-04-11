@@ -167,12 +167,14 @@
             this.logToolStripMenuItem.Name = "logToolStripMenuItem";
             this.logToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logToolStripMenuItem.Text = "Log";
+            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
             // 
             // logErroToolStripMenuItem
             // 
             this.logErroToolStripMenuItem.Name = "logErroToolStripMenuItem";
             this.logErroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logErroToolStripMenuItem.Text = "Log Erro";
+            this.logErroToolStripMenuItem.Click += new System.EventHandler(this.logErroToolStripMenuItem_Click);
             // 
             // toolStripMenuItem9
             // 
@@ -188,21 +190,21 @@
             // 
             this.toolStripMenuItem10.Image = global::StockControlWillian.Properties.Resources._18392;
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(168, 22);
             this.toolStripMenuItem10.Text = "Contact";
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Image = global::StockControlWillian.Properties.Resources.kisspng_ipma_email_telephone_message_email_icon_5acf36453ee1e1_3103384815235292852576;
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(168, 22);
             this.toolStripMenuItem11.Text = "Sent E-mail";
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Image = global::StockControlWillian.Properties.Resources._63440;
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(168, 22);
             this.toolStripMenuItem12.Text = "Change Password";
             // 
             // HomeCategoryADM
