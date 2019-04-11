@@ -167,12 +167,14 @@
             this.logToolStripMenuItem.Name = "logToolStripMenuItem";
             this.logToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logToolStripMenuItem.Text = "Log";
+            this.logToolStripMenuItem.Click += new System.EventHandler(this.logToolStripMenuItem_Click);
             // 
             // logErroToolStripMenuItem
             // 
             this.logErroToolStripMenuItem.Name = "logErroToolStripMenuItem";
             this.logErroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.logErroToolStripMenuItem.Text = "Log Erro";
+            this.logErroToolStripMenuItem.Click += new System.EventHandler(this.logErroToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
