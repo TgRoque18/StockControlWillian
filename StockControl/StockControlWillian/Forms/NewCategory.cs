@@ -1,4 +1,6 @@
-﻿using System;
+﻿using StockControlWillian.Classe;
+using StockControlWillian.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +22,14 @@ namespace StockControlWillian.Forms
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnOk_Click(object sender, EventArgs e)
+        {
+            Category c = new Category();
+            c.Name = txtCategory.Text;
+            c.Active = true;
+            DBCategoryHelper.Create(c);                        
         }
     }
 }
