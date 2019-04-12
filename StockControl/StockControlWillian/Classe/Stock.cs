@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockControlWillian.Classe
 {
-    class Stock
+    public class Stock
     {
         private int iD;
 
