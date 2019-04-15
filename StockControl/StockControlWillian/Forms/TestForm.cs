@@ -12,24 +12,25 @@ using System.Windows.Forms;
 
 namespace StockControlWillian.Forms
 {
-    public partial class NewCategory : Form
+    public partial class TestForm : Form
     {
-        public NewCategory()
+        public TestForm()
         {
             InitializeComponent();
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnOk_Click(object sender, EventArgs e)
+        private void btnTest_Click(object sender, EventArgs e)
         {
             Category c = new Category();
-            c.Name = txtCategory.Text;
+            c.Name = "Roupas";
             c.Active = true;
-            DBCategoryHelper.Create(c);                        
+            DBCategoryHelper.Create(c);
+
+            Category c1 = new Category();
+            c1.ID = 1;
+            c1.Name = "Farmácia";
+            c1.Active = true;
+            DBCategoryHelper.Update(c1);
         }
     }
 }

@@ -127,6 +127,13 @@
     <Compile Include="Forms\NewStock.Designer.cs">
       <DependentUpon>NewStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TestForm.Designer.cs">
+      <DependentUpon>TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\DBCategoryHelper.cs" />
     <Compile Include="Helpers\Helper.cs" />
     <Compile Include="Helpers\UserHelper.cs" />
     <Compile Include="Forms\Home.cs">
@@ -227,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\NewStock.resx">
       <DependentUpon>NewStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TestForm.resx">
+      <DependentUpon>TestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

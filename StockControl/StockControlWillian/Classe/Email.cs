@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockControlWillian.Classe
 {
-    class Email
+    public class Email
     {
         private string to;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StockControlWillian.Classe
 {
-    class LogType
+    public class LogType
     {
 
         private int iD;
