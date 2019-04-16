@@ -10,7 +10,7 @@ namespace StockControlWillian.Helpers
     {
         public static string Erro()
         {
-            return ("Não foi possivel realizar esta ação!");
+            return ("Unable to perform this action!");
         }
 
         public static string EPassword()
@@ -20,12 +20,29 @@ namespace StockControlWillian.Helpers
 
         public static string SBanco()
         {
-            return ("Não foi possivel realizar esta ação por que ainda não tem banco de dados.");
+            return ("Sorry! problems with the DataBase.");
         }
 
         public static string Help()
         {
             return ("Please call the suport: CelPhone (24) 99208-6339.");
+        }
+
+        public static string Welcome()
+        {
+            return ("Welcome to stock control!");
+        }
+        public static string Product()
+        {
+            return ("Product registered!");
+        }
+        public static string Stock()
+        {
+            return ("Action Completed!");
+        }
+        public static string Category()
+        {
+            return ("Category registered!");
         }
     }
 }

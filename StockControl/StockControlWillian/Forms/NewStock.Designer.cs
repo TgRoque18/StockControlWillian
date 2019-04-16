@@ -30,12 +30,12 @@
         {
             this.btnOk = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtPut = new System.Windows.Forms.TextBox();
+            this.txtTake = new System.Windows.Forms.TextBox();
+            this.txtProduct = new System.Windows.Forms.TextBox();
+            this.lblProduct = new System.Windows.Forms.Label();
+            this.lblTake = new System.Windows.Forms.Label();
+            this.lblPut = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOk
@@ -59,59 +59,59 @@
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // textBox1
+            // txtPut
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(93, 72);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(171, 26);
-            this.textBox1.TabIndex = 3;
+            this.txtPut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPut.Location = new System.Drawing.Point(93, 72);
+            this.txtPut.Name = "txtPut";
+            this.txtPut.Size = new System.Drawing.Size(171, 26);
+            this.txtPut.TabIndex = 3;
             // 
-            // textBox2
+            // txtTake
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(93, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(171, 26);
-            this.textBox2.TabIndex = 6;
+            this.txtTake.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTake.Location = new System.Drawing.Point(93, 104);
+            this.txtTake.Name = "txtTake";
+            this.txtTake.Size = new System.Drawing.Size(171, 26);
+            this.txtTake.TabIndex = 6;
             // 
-            // textBox3
+            // txtProduct
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(17, 40);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(247, 26);
-            this.textBox3.TabIndex = 7;
+            this.txtProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProduct.Location = new System.Drawing.Point(17, 40);
+            this.txtProduct.Name = "txtProduct";
+            this.txtProduct.Size = new System.Drawing.Size(247, 26);
+            this.txtProduct.TabIndex = 7;
             // 
-            // label1
+            // lblProduct
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 20);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Product:";
+            this.lblProduct.AutoSize = true;
+            this.lblProduct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProduct.Location = new System.Drawing.Point(13, 13);
+            this.lblProduct.Name = "lblProduct";
+            this.lblProduct.Size = new System.Drawing.Size(68, 20);
+            this.lblProduct.TabIndex = 8;
+            this.lblProduct.Text = "Product:";
             // 
-            // label2
+            // lblTake
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(13, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 20);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Take:";
+            this.lblTake.AutoSize = true;
+            this.lblTake.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTake.Location = new System.Drawing.Point(13, 107);
+            this.lblTake.Name = "lblTake";
+            this.lblTake.Size = new System.Drawing.Size(48, 20);
+            this.lblTake.TabIndex = 9;
+            this.lblTake.Text = "Take:";
             // 
-            // label3
+            // lblPut
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 75);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 20);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Put:";
+            this.lblPut.AutoSize = true;
+            this.lblPut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPut.Location = new System.Drawing.Point(12, 75);
+            this.lblPut.Name = "lblPut";
+            this.lblPut.Size = new System.Drawing.Size(37, 20);
+            this.lblPut.TabIndex = 10;
+            this.lblPut.Text = "Put:";
             // 
             // NewStock
             // 
@@ -119,14 +119,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(280, 199);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.lblPut);
+            this.Controls.Add(this.lblTake);
+            this.Controls.Add(this.lblProduct);
+            this.Controls.Add(this.txtProduct);
+            this.Controls.Add(this.txtTake);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPut);
             this.Name = "NewStock";
             this.Text = "NewStock";
             this.ResumeLayout(false);
@@ -138,11 +138,11 @@
 
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtPut;
+        private System.Windows.Forms.TextBox txtTake;
+        private System.Windows.Forms.TextBox txtProduct;
+        private System.Windows.Forms.Label lblProduct;
+        private System.Windows.Forms.Label lblTake;
+        private System.Windows.Forms.Label lblPut;
     }
 }

@@ -26,10 +26,20 @@ namespace StockControlWillian.Forms
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            Category c = new Category();
-            c.Name = txtCategory.Text;
-            c.Active = true;
-            DBCategoryHelper.Create(c);                        
+            if (txtCategory.Text != "")
+            {
+                Category c = new Category();
+                c.Name = txtCategory.Text;
+                c.Active = true;
+                DBCategoryHelper.Create(c);
+                MessageBox.Show(Helpers.Helper.Category());
+
+            }  
+            else
+            {
+                MessageBox.Show(Helpers.Helper.Erro());
+            }
+
         }
     }
 }
