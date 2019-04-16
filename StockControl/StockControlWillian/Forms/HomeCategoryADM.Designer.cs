@@ -122,15 +122,16 @@
             // 
             this.toolStripMenuItem3.Image = global::StockControlWillian.Properties.Resources.print_printer_2;
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(111, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem3.Text = "Print";
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Image = global::StockControlWillian.Properties.Resources.exit_512;
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(111, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem4.Text = "LogOff";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.logOffToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
@@ -149,18 +150,21 @@
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem6.Text = "Category";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.categoryToolStripMenuItem_Click);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
             this.toolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem7.Text = "Product";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.productToolStripMenuItem_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
             this.toolStripMenuItem8.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem8.Text = "Stock";
+            this.toolStripMenuItem8.Click += new System.EventHandler(this.stockToolStripMenuItem_Click);
             // 
             // logToolStripMenuItem
             // 
@@ -190,21 +194,23 @@
             // 
             this.toolStripMenuItem10.Image = global::StockControlWillian.Properties.Resources._18392;
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(168, 22);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem10.Text = "Contact";
+            this.toolStripMenuItem10.Click += new System.EventHandler(this.contactToolStripMenuItem_Click);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Image = global::StockControlWillian.Properties.Resources.kisspng_ipma_email_telephone_message_email_icon_5acf36453ee1e1_3103384815235292852576;
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(168, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem11.Text = "Sent E-mail";
+            this.toolStripMenuItem11.Click += new System.EventHandler(this.sentEmailToolStripMenuItem_Click);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Image = global::StockControlWillian.Properties.Resources._63440;
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(168, 22);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem12.Text = "Change Password";
             // 
             // HomeCategoryADM
