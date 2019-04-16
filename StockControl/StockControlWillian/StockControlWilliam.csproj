@@ -134,6 +134,12 @@
       <DependentUpon>TestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\DBCategoryHelper.cs" />
+    <Compile Include="Helpers\DBLogHelper.cs" />
+    <Compile Include="Helpers\DBLogTypeHelper.cs" />
+    <Compile Include="Helpers\DBProductHelper.cs" />
+    <Compile Include="Helpers\DBStockHelper.cs" />
+    <Compile Include="Helpers\DBUserHelper.cs" />
+    <Compile Include="Helpers\DBUserProfileHelper.cs" />
     <Compile Include="Helpers\Helper.cs" />
     <Compile Include="Helpers\UserHelper.cs" />
     <Compile Include="Forms\Home.cs">

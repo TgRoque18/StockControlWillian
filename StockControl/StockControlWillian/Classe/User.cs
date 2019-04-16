@@ -49,5 +49,10 @@ namespace StockControlWillian.Classe
             get => active;
             set => active = value;
         }
+        public UserType UserType
+        {
+            get => userType;
+            set => userType = value;
+        }
     }
 }

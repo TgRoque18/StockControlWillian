@@ -33,5 +33,10 @@ namespace StockControlWillian.Classe
             get => active;
             set => active = value;
         }
+        public LogType LogType
+        {
+            get => logType;
+            set => logType = value;
+        }
     }
 }

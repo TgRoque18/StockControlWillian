@@ -16,7 +16,7 @@ namespace StockControlWillian.Classe
 
         private Category categoria;
 
-        private bool ativate;
+        private bool active;
 
         public int ID
         {
@@ -36,10 +36,10 @@ namespace StockControlWillian.Classe
             set => price = value;
         }
 
-        public bool Ativate
+        public bool Active
         {
-            get => ativate;
-            set => ativate = value;
+            get => active;
+            set => active = value;
         }
         internal Category Categoria
         {
