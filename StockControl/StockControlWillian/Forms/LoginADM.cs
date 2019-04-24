@@ -55,10 +55,9 @@ namespace StockControlWillian
             if (txtUser.Text == user && txtPassword.Text == password)
             {
                 MessageBox.Show(Helpers.Helper.Welcome());
-                HomeUserADM HA = new HomeUserADM();
-                HA.Show();
+                HomeUserADM HU = new HomeUserADM();
+                HU.Show();
                 this.Hide();
-
             }
             else
             {

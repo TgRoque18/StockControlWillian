@@ -44,5 +44,9 @@ namespace StockControlWillian.Helpers
         {
             return ("Category registered!");
         }
+        public static string User()
+        {
+            return ("User registered!");
+        }
     }
 }

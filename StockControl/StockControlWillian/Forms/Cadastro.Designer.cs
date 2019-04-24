@@ -33,7 +33,7 @@
             this.btnOk = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.lblUser = new System.Windows.Forms.Label();
-            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtCSenha = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@
             this.lblRG = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtCEmail = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.txtCPF = new System.Windows.Forms.TextBox();
             this.txtRG = new System.Windows.Forms.TextBox();
@@ -72,6 +72,7 @@
             // 
             // btnOk
             // 
+            this.btnOk.Enabled = false;
             this.btnOk.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.Location = new System.Drawing.Point(490, 268);
             this.btnOk.Name = "btnOk";
@@ -98,17 +99,17 @@
             this.lblUser.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUser.Location = new System.Drawing.Point(20, 24);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(78, 26);
+            this.lblUser.Size = new System.Drawing.Size(76, 26);
             this.lblUser.TabIndex = 67;
-            this.lblUser.Text = "Usuario";
+            this.lblUser.Text = "*E-mail";
             // 
-            // txtUser
+            // txtEmail
             // 
-            this.txtUser.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUser.Location = new System.Drawing.Point(153, 22);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(176, 31);
-            this.txtUser.TabIndex = 52;
+            this.txtEmail.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(153, 22);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(176, 31);
+            this.txtEmail.TabIndex = 52;
             // 
             // label1
             // 
@@ -116,9 +117,9 @@
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
             this.label1.Location = new System.Drawing.Point(20, 168);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 26);
+            this.label1.Size = new System.Drawing.Size(126, 26);
             this.label1.TabIndex = 66;
-            this.label1.Text = "Conf. Senha";
+            this.label1.Text = "*Conf. Senha";
             // 
             // txtCSenha
             // 
@@ -128,6 +129,7 @@
             this.txtCSenha.PasswordChar = '*';
             this.txtCSenha.Size = new System.Drawing.Size(176, 31);
             this.txtCSenha.TabIndex = 59;
+            this.txtCSenha.TextChanged += new System.EventHandler(this.TxtCSenha_TextChanged);
             // 
             // label6
             // 
@@ -135,9 +137,9 @@
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
             this.label6.Location = new System.Drawing.Point(20, 120);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 26);
+            this.label6.Size = new System.Drawing.Size(75, 26);
             this.label6.TabIndex = 65;
-            this.label6.Text = "Senha";
+            this.label6.Text = "*Senha";
             // 
             // label5
             // 
@@ -145,9 +147,9 @@
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(20, 72);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 26);
+            this.label5.Size = new System.Drawing.Size(127, 26);
             this.label5.TabIndex = 64;
-            this.label5.Text = "E-mail";
+            this.label5.Text = "*Conf. E-mail";
             // 
             // lblEndereco
             // 
@@ -185,9 +187,9 @@
             this.lblNome.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
             this.lblNome.Location = new System.Drawing.Point(368, 24);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(62, 26);
+            this.lblNome.Size = new System.Drawing.Size(72, 26);
             this.lblNome.TabIndex = 60;
-            this.lblNome.Text = "Nome";
+            this.lblNome.Text = "*Nome";
             // 
             // txtSenha
             // 
@@ -198,13 +200,14 @@
             this.txtSenha.Size = new System.Drawing.Size(176, 31);
             this.txtSenha.TabIndex = 58;
             // 
-            // txtEmail
+            // txtCEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.txtEmail.Location = new System.Drawing.Point(153, 70);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(176, 31);
-            this.txtEmail.TabIndex = 57;
+            this.txtCEmail.Font = new System.Drawing.Font("Calibri", 14.25F);
+            this.txtCEmail.Location = new System.Drawing.Point(153, 70);
+            this.txtCEmail.Name = "txtCEmail";
+            this.txtCEmail.Size = new System.Drawing.Size(176, 31);
+            this.txtCEmail.TabIndex = 57;
+            this.txtCEmail.TextChanged += new System.EventHandler(this.TxtEmail_TextChanged);
             // 
             // txtEndereco
             // 
@@ -259,6 +262,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(176, 32);
             this.comboBox1.TabIndex = 73;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // Cadastro
             // 
@@ -273,7 +277,7 @@
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lblUser);
-            this.Controls.Add(this.txtUser);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCSenha);
             this.Controls.Add(this.label6);
@@ -283,7 +287,7 @@
             this.Controls.Add(this.lblRG);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtCEmail);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.txtRG);
@@ -302,7 +306,7 @@
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lblUser;
-        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCSenha;
         private System.Windows.Forms.Label label6;
@@ -312,7 +316,7 @@
         private System.Windows.Forms.Label lblRG;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtSenha;
-        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtCEmail;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.TextBox txtCPF;
         private System.Windows.Forms.TextBox txtRG;

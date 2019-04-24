@@ -40,5 +40,20 @@ namespace StockControlWillian.Forms
                 MessageBox.Show(Helpers.Helper.Erro());
             }
         }
+
+        private void TxtProduct_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NewProductADM_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

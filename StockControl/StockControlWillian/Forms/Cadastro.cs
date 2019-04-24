@@ -1,4 +1,6 @@
-﻿using System;
+﻿using StockControlWillian.Classe;
+using StockControlWillian.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,8 +21,34 @@ namespace StockControlWillian
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Helpers.Helper.SBanco());
-            
+            if (txtCEmail.Text != "" && txtEmail.Text != "" && txtCSenha.Text != "" && txtSenha.Text != "" && txtNome.Text != "")
+            {
+                if (txtCEmail.Text == txtEmail.Text)
+                {
+                    if (txtCSenha.Text == txtSenha.Text)
+                    {
+                        User u = new User();
+                        u.Name = txtNome.Text;
+                        u.Email = txtCEmail.Text;
+                        u.Password = txtSenha.Text;
+                        u.Active = true;
+                        DBUserHelper.Create(u);
+                        MessageBox.Show(Helpers.Helper.User());
+                    }
+                    else
+                    {
+                        MessageBox.Show(Helpers.Helper.Erro());
+                    }
+                }
+                else
+                {
+                    MessageBox.Show(Helpers.Helper.Erro());
+                }
+            }            
+            else
+            {
+                MessageBox.Show(Helpers.Helper.Erro());
+            }                        
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -28,6 +56,36 @@ namespace StockControlWillian
             LoginADM L = new LoginADM();
             L.Show();
             this.Hide();
+        }
+
+        private void TxtCSenha_TextChanged(object sender, EventArgs e)
+        {
+            //if (txtSenha.Text == txtCSenha.Text)
+            //{
+            //    btnOk.Enabled = true;
+            //}
+            //else
+            //{
+            //    btnOk.Enabled = false;
+            //}
+
+        }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtEmail_TextChanged(object sender, EventArgs e)
+        {
+            //if (txtCEmail.Text == txtEmail.Text)
+            //{
+            //    btnOk.Enabled = true;
+            //}
+            //else
+            //{
+            //    btnOk.Enabled = false;
+            //}
         }
     }
 }
