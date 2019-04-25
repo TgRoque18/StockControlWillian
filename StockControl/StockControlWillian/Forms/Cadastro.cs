@@ -37,12 +37,12 @@ namespace StockControlWillian
                     }
                     else
                     {
-                        MessageBox.Show(Helpers.Helper.Erro());
+                        MessageBox.Show(Helpers.Helper.Password());
                     }
                 }
                 else
                 {
-                    MessageBox.Show(Helpers.Helper.Erro());
+                    MessageBox.Show(Helpers.Helper.Email());
                 }
             }            
             else

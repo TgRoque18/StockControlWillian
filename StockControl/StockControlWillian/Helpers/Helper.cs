@@ -17,6 +17,14 @@ namespace StockControlWillian.Helpers
         {
             return ("User or Password is incorrect.");
         }
+        public static string Password()
+        {
+            return ("Password and Conf. Password are not the same.");
+        }
+        public static string Email()
+        {
+            return ("Email and Conf. Email are not the same.");
+        }
 
         public static string SBanco()
         {

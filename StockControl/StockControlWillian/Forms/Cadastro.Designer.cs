@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnOk = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.lblUser = new System.Windows.Forms.Label();
@@ -38,43 +36,19 @@
             this.txtCSenha = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.lblEndereco = new System.Windows.Forms.Label();
-            this.lblbCPF = new System.Windows.Forms.Label();
-            this.lblRG = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtCEmail = new System.Windows.Forms.TextBox();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.txtCPF = new System.Windows.Forms.TextBox();
-            this.txtRG = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.label2.Location = new System.Drawing.Point(368, 72);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 26);
-            this.label2.TabIndex = 71;
-            this.label2.Text = "Sobrenome";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.textBox1.Location = new System.Drawing.Point(490, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 31);
-            this.textBox1.TabIndex = 70;
-            // 
             // btnOk
             // 
             this.btnOk.Enabled = false;
             this.btnOk.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOk.Location = new System.Drawing.Point(490, 268);
+            this.btnOk.Location = new System.Drawing.Point(490, 174);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(98, 38);
             this.btnOk.TabIndex = 69;
@@ -85,7 +59,7 @@
             // btnCancel
             // 
             this.btnCancel.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(153, 268);
+            this.btnCancel.Location = new System.Drawing.Point(153, 174);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(98, 38);
             this.btnCancel.TabIndex = 68;
@@ -97,16 +71,16 @@
             // 
             this.lblUser.AutoSize = true;
             this.lblUser.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUser.Location = new System.Drawing.Point(20, 24);
+            this.lblUser.Location = new System.Drawing.Point(20, 68);
             this.lblUser.Name = "lblUser";
-            this.lblUser.Size = new System.Drawing.Size(76, 26);
+            this.lblUser.Size = new System.Drawing.Size(66, 26);
             this.lblUser.TabIndex = 67;
-            this.lblUser.Text = "*E-mail";
+            this.lblUser.Text = "E-mail";
             // 
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(153, 22);
+            this.txtEmail.Location = new System.Drawing.Point(153, 66);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(176, 31);
             this.txtEmail.TabIndex = 52;
@@ -115,16 +89,16 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.label1.Location = new System.Drawing.Point(20, 168);
+            this.label1.Location = new System.Drawing.Point(357, 68);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(126, 26);
+            this.label1.Size = new System.Drawing.Size(116, 26);
             this.label1.TabIndex = 66;
-            this.label1.Text = "*Conf. Senha";
+            this.label1.Text = "Conf. Senha";
             // 
             // txtCSenha
             // 
             this.txtCSenha.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.txtCSenha.Location = new System.Drawing.Point(153, 166);
+            this.txtCSenha.Location = new System.Drawing.Point(490, 66);
             this.txtCSenha.Name = "txtCSenha";
             this.txtCSenha.PasswordChar = '*';
             this.txtCSenha.Size = new System.Drawing.Size(176, 31);
@@ -135,66 +109,36 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.label6.Location = new System.Drawing.Point(20, 120);
+            this.label6.Location = new System.Drawing.Point(357, 14);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 26);
+            this.label6.Size = new System.Drawing.Size(65, 26);
             this.label6.TabIndex = 65;
-            this.label6.Text = "*Senha";
+            this.label6.Text = "Senha";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(20, 72);
+            this.label5.Location = new System.Drawing.Point(20, 122);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(127, 26);
+            this.label5.Size = new System.Drawing.Size(117, 26);
             this.label5.TabIndex = 64;
-            this.label5.Text = "*Conf. E-mail";
-            // 
-            // lblEndereco
-            // 
-            this.lblEndereco.AutoSize = true;
-            this.lblEndereco.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.lblEndereco.Location = new System.Drawing.Point(368, 216);
-            this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(94, 26);
-            this.lblEndereco.TabIndex = 63;
-            this.lblEndereco.Text = "Endereço";
-            // 
-            // lblbCPF
-            // 
-            this.lblbCPF.AutoSize = true;
-            this.lblbCPF.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.lblbCPF.Location = new System.Drawing.Point(368, 168);
-            this.lblbCPF.Name = "lblbCPF";
-            this.lblbCPF.Size = new System.Drawing.Size(45, 26);
-            this.lblbCPF.TabIndex = 62;
-            this.lblbCPF.Text = "CPF";
-            // 
-            // lblRG
-            // 
-            this.lblRG.AutoSize = true;
-            this.lblRG.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.lblRG.Location = new System.Drawing.Point(368, 120);
-            this.lblRG.Name = "lblRG";
-            this.lblRG.Size = new System.Drawing.Size(37, 26);
-            this.lblRG.TabIndex = 61;
-            this.lblRG.Text = "RG";
+            this.label5.Text = "Conf. E-mail";
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
             this.lblNome.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.lblNome.Location = new System.Drawing.Point(368, 24);
+            this.lblNome.Location = new System.Drawing.Point(20, 14);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(72, 26);
+            this.lblNome.Size = new System.Drawing.Size(62, 26);
             this.lblNome.TabIndex = 60;
-            this.lblNome.Text = "*Nome";
+            this.lblNome.Text = "Nome";
             // 
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.txtSenha.Location = new System.Drawing.Point(153, 118);
+            this.txtSenha.Location = new System.Drawing.Point(490, 12);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(176, 31);
@@ -203,40 +147,16 @@
             // txtCEmail
             // 
             this.txtCEmail.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.txtCEmail.Location = new System.Drawing.Point(153, 70);
+            this.txtCEmail.Location = new System.Drawing.Point(153, 120);
             this.txtCEmail.Name = "txtCEmail";
             this.txtCEmail.Size = new System.Drawing.Size(176, 31);
             this.txtCEmail.TabIndex = 57;
             this.txtCEmail.TextChanged += new System.EventHandler(this.TxtEmail_TextChanged);
             // 
-            // txtEndereco
-            // 
-            this.txtEndereco.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.txtEndereco.Location = new System.Drawing.Point(490, 214);
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(176, 31);
-            this.txtEndereco.TabIndex = 56;
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.txtCPF.Location = new System.Drawing.Point(490, 166);
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(176, 31);
-            this.txtCPF.TabIndex = 55;
-            // 
-            // txtRG
-            // 
-            this.txtRG.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.txtRG.Location = new System.Drawing.Point(490, 118);
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(176, 31);
-            this.txtRG.TabIndex = 54;
-            // 
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Calibri", 14.25F);
-            this.txtNome.Location = new System.Drawing.Point(490, 22);
+            this.txtNome.Location = new System.Drawing.Point(153, 12);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(176, 31);
             this.txtNome.TabIndex = 53;
@@ -245,7 +165,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F);
-            this.label3.Location = new System.Drawing.Point(20, 216);
+            this.label3.Location = new System.Drawing.Point(357, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 26);
             this.label3.TabIndex = 72;
@@ -258,7 +178,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Usuario",
             "Administrador"});
-            this.comboBox1.Location = new System.Drawing.Point(153, 213);
+            this.comboBox1.Location = new System.Drawing.Point(490, 119);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(176, 32);
             this.comboBox1.TabIndex = 73;
@@ -269,11 +189,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(693, 320);
+            this.ClientSize = new System.Drawing.Size(693, 230);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.lblUser);
@@ -282,15 +200,9 @@
             this.Controls.Add(this.txtCSenha);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.lblEndereco);
-            this.Controls.Add(this.lblbCPF);
-            this.Controls.Add(this.lblRG);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtCEmail);
-            this.Controls.Add(this.txtEndereco);
-            this.Controls.Add(this.txtCPF);
-            this.Controls.Add(this.txtRG);
             this.Controls.Add(this.txtNome);
             this.Name = "Cadastro";
             this.Text = "Cadastro";
@@ -300,9 +212,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label lblUser;
@@ -311,15 +220,9 @@
         private System.Windows.Forms.TextBox txtCSenha;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblEndereco;
-        private System.Windows.Forms.Label lblbCPF;
-        private System.Windows.Forms.Label lblRG;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtCEmail;
-        private System.Windows.Forms.TextBox txtEndereco;
-        private System.Windows.Forms.TextBox txtCPF;
-        private System.Windows.Forms.TextBox txtRG;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
