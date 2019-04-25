@@ -46,12 +46,11 @@
             // 
             // btnOk
             // 
-            this.btnOk.Enabled = false;
             this.btnOk.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOk.Location = new System.Drawing.Point(490, 174);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(98, 38);
-            this.btnOk.TabIndex = 69;
+            this.btnOk.TabIndex = 7;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
@@ -62,7 +61,7 @@
             this.btnCancel.Location = new System.Drawing.Point(153, 174);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(98, 38);
-            this.btnCancel.TabIndex = 68;
+            this.btnCancel.TabIndex = 8;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -83,7 +82,7 @@
             this.txtEmail.Location = new System.Drawing.Point(153, 66);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(176, 31);
-            this.txtEmail.TabIndex = 52;
+            this.txtEmail.TabIndex = 2;
             // 
             // label1
             // 
@@ -102,7 +101,7 @@
             this.txtCSenha.Name = "txtCSenha";
             this.txtCSenha.PasswordChar = '*';
             this.txtCSenha.Size = new System.Drawing.Size(176, 31);
-            this.txtCSenha.TabIndex = 59;
+            this.txtCSenha.TabIndex = 5;
             this.txtCSenha.TextChanged += new System.EventHandler(this.TxtCSenha_TextChanged);
             // 
             // label6
@@ -142,7 +141,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(176, 31);
-            this.txtSenha.TabIndex = 58;
+            this.txtSenha.TabIndex = 4;
             // 
             // txtCEmail
             // 
@@ -150,7 +149,7 @@
             this.txtCEmail.Location = new System.Drawing.Point(153, 120);
             this.txtCEmail.Name = "txtCEmail";
             this.txtCEmail.Size = new System.Drawing.Size(176, 31);
-            this.txtCEmail.TabIndex = 57;
+            this.txtCEmail.TabIndex = 3;
             this.txtCEmail.TextChanged += new System.EventHandler(this.TxtEmail_TextChanged);
             // 
             // txtNome
@@ -159,7 +158,7 @@
             this.txtNome.Location = new System.Drawing.Point(153, 12);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(176, 31);
-            this.txtNome.TabIndex = 53;
+            this.txtNome.TabIndex = 1;
             // 
             // label3
             // 
@@ -181,7 +180,7 @@
             this.comboBox1.Location = new System.Drawing.Point(490, 119);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(176, 32);
-            this.comboBox1.TabIndex = 73;
+            this.comboBox1.TabIndex = 6;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // Cadastro

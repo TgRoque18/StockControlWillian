@@ -39,7 +39,7 @@ namespace StockControlWillian
             {
                 Cadastro C = new Cadastro();
                 C.Show();
-                this.Hide();
+                this.Show();
             }
             else
             {
