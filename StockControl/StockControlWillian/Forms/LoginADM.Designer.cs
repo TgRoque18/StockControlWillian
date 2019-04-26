@@ -72,6 +72,7 @@
             this.btnOk.TabIndex = 49;
             this.btnOk.Text = "OK";
             this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
             // 
             // txtPassword
             // 
@@ -82,6 +83,7 @@
             this.txtPassword.Size = new System.Drawing.Size(205, 26);
             this.txtPassword.TabIndex = 48;
             this.txtPassword.TextChanged += new System.EventHandler(this.txtPassword_TextChanged);
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // txtUser
             // 

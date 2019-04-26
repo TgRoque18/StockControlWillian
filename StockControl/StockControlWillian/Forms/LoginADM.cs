@@ -52,6 +52,11 @@ namespace StockControlWillian
 
         private void btnOk_Click(object sender, EventArgs e)
         {
+            EnterUser();
+        }
+
+        private void EnterUser()
+        {
             if (txtUser.Text == user && txtPassword.Text == password)
             {
                 MessageBox.Show(Helpers.Helper.Welcome());
@@ -107,6 +112,14 @@ namespace StockControlWillian
                 client.Send(mail);
             }
             MessageBox.Show("Mensaje enviado Exitosamente");
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                EnterUser();
+            }
         }
     }
 }
