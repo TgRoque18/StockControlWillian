@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StockControlWillian.Helpers;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,19 @@ namespace StockControlWillian.Forms
         public HomeCategoryADM()
         {
             InitializeComponent();
+            GetCategories();
         }
+        
+        public void GetCategories()
+        {
+            DataTable dt = DBCategoryHelper.GetAll();
+
+            if(dt != null)
+            {
+                dtGridCategories.DataSource = dt;
+            }
+        }
+
 
         private void contactToolStripMenuItem_Click(object sender, EventArgs e)
         {

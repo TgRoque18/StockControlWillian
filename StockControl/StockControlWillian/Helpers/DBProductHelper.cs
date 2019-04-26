@@ -19,12 +19,13 @@ namespace StockControlWillian.Helpers
             try
             {
                 sqlConnect.Open();
-                string sql = "INSERT INTO PRODUCT(NAME, ACTIVE) VALUES (@name, @active)";
+                string sql = "INSERT INTO PRODUCT(NAME, ACTIVE, FK_CATEGORY) VALUES (@name, @active, @cat)";
 
                 SqlCommand cmd = new SqlCommand(sql, sqlConnect);
 
                 cmd.Parameters.Add(new SqlParameter("@name", p.Name));
                 cmd.Parameters.Add(new SqlParameter("@active", p.Active));
+                cmd.Parameters.Add(new SqlParameter("@cat", p.Categoria.ID));
 
                 cmd.ExecuteNonQuery();
             }

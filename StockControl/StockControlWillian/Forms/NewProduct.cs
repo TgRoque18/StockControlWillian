@@ -17,6 +17,20 @@ namespace StockControlWillian.Forms
         public NewProductADM()
         {
             InitializeComponent();
+            LoadCategories();
+        }
+
+        public void LoadCategories()
+        {
+            List<Category> list = DBCategoryHelper.GetCategories();
+
+            if(list.Count > 0)
+            {
+                foreach (var item in list)
+                {
+                    comboBoxCategory.Items.Add(item.Name);
+                }
+            }
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -26,12 +40,15 @@ namespace StockControlWillian.Forms
 
         private void btnOk_Click(object sender, EventArgs e)
         {
-            if (txtProduct.Text != "")
+            if (txtProduct.Text != "" && comboBoxCategory.SelectedItem != "")
             {
-                Product c = new Product();
-                c.Name = txtProduct.Text;
-                c.Active = true;
-                DBProductHelper.Create(c);
+                Category cat = DBCategoryHelper.GetCategoryByName(comboBoxCategory.SelectedItem.ToString());
+                
+                Product p = new Product();
+                p.Name = txtProduct.Text;
+                p.Active = true;
+                p.Categoria = cat;
+                DBProductHelper.Create(p);
                 MessageBox.Show(Helpers.Helper.Product());
 
             }
